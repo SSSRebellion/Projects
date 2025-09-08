@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad 3</title>
+</head>
+<body>
+
+  <h1>Sumar dos números</h1>
+  <p id="resultado"></p>
+
+  <script>
+   function sumar (num1, num2){
+    return num1 + num2;
+   }
+
+   let resultado = sumar(5,10);
+
+   console.log("La suma es: ", resultado)
+   
+   document.getElementById("resultado").innerHTML = `La suma es: <strong>${resultado}</strong>`;
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi primera página en JS</title>
+</head>
+<body>
+
+  <h1>Información de estudiantes</h1>
+  <p id="info"></p>
+  <script>
+    let nombre = "Juan";
+    let edad = 25;
+    let esEstudiante = true;
+
+    console.log("Nombre:", nombre);
+    console.log("Edad:", edad);
+    console.log("¿Eres estudiante?", esEstudiante);
+
+      let mensaje = `
+      <strong>Nombre:</strong> ${nombre} <br>
+      <strong>Edad:</strong> ${edad} <br>
+      <strong>¿Eres estudiante?</strong> ${esEstudiante ? "Sí" : "No"}
+    `;
+
+    // Insertar el mensaje en el elemento con id "info"
+    document.getElementById("info").innerHTML = mensaje;
+  </script>
+</body>
+</html>

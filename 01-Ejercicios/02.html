@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi primera página en JS</title>
+</head>
+<body>
+
+  <h1>Números pares o impares</h1>
+  <p id="info"></p>
+
+  <script>
+    let mensaje = "";
+
+    for (let i = 1; i <= 10; i++) {
+      if (i % 2 === 0) {
+        console.log("Número par:", i);
+        mensaje += `<strong>Número par:</strong> ${i} <br>`;
+      } else {
+        console.log("Número impar:", i);
+        mensaje += `<strong>Número impar:</strong> ${i} <br>`;
+      }
+    }
+
+    // Insertar el mensaje en el elemento con id "info"
+    document.getElementById("info").innerHTML = mensaje;
+  </script>
+
+</body>
+</html>
