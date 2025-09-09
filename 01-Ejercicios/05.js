@@ -1,7 +1,13 @@
-// 👉 Actividad 5:
-// Crea un campo de texto y un botón. Al escribir tu edad y presionar el botón, el
-// programa debe indicar si eres mayor o menor de edad.
 
-function mostrarEdad(){
-    let edad = document.getElementById("edad").value;
-}
+function verificarEdad() {
+      let edad = document.getElementById("edad").value;
+      let resultado = document.getElementById("resultado");
+
+      if (edad === "") {
+        resultado.textContent = "Por favor, escribe tu edad.";
+      } else if (edad >= 18) {
+        resultado.textContent = "Eres mayor de edad ";
+      } else {
+        resultado.textContent = "Eres menor de edad ";
+      }
+    }
